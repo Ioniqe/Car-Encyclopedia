@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+
+    tools:context=".CarList"
+    >
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:paddingTop="120dp"
+            android:src="@drawable/car" />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:fontFamily="@font/modern_sans_light"-->
+<!--            android:text="RETURNING TO MAIN MENU"-->
+<!--            android:textColor="@color/paleBlue"-->
+<!--            android:layout_marginTop="310dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="70sp" />-->
+<!--    </RelativeLayout>-->
+</LinearLayout>

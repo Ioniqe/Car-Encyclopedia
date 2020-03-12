@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/bg"-->
+<!--        android:src="@drawable/background"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="690dp"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+    <TextView
+        android:id ="@+id/car_year"
+        android:text ="YEAR"
+        android:textColor ="@color/colorAccent"
+        android:fontFamily ="@font/modern_sans_light"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:layout_marginLeft ="135dp"
+        android:layout_marginTop ="20dp"
+        android:textSize ="35sp"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/car_image"-->
+<!--        android:src="@drawable/c2019_mercedes_amg_gtr"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="180dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="50dp" />-->
+
+    <TextView
+        android:id ="@+id/car_name"
+        android:text ="NAME"
+        android:textColor ="@color/colorAccent"
+        android:fontFamily ="@font/modern_sans_light"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:layout_marginLeft ="135dp"
+        android:layout_marginTop ="230dp"
+        android:textSize ="35sp"/>
+
+    <ImageView
+        android:id="@+id/manufacturer"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/details_tab"
+        android:layout_marginTop="300dp" />
+
+    <ImageView
+        android:id="@+id/price"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="190dp"
+        android:src="@drawable/details_tab"
+        android:layout_marginTop="300dp" />
+
+    <ImageView
+        android:id="@+id/class_name"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/details_tab"
+        android:layout_marginTop="500dp" />
+
+        <TextView
+        android:id="@+id/car_manufacturer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MANUFACTURER"
+        android:fontFamily="@font/modern_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="@color/blueAccent"/>
+
+    <TextView
+        android:id="@+id/car_manufacturer_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXT"
+        android:fontFamily="@font/modern_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/car_class_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLASS"
+        android:fontFamily="@font/modern_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/pinkAccent"/>
+
+    <TextView
+        android:id="@+id/car_class_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXT"
+        android:fontFamily="@font/modern_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/car_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRICE"
+        android:fontFamily="@font/modern_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="238dp"
+        android:textColor="@color/orangeAccent"/>
+
+    <TextView
+        android:id="@+id/car_price_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXT"
+        android:fontFamily="@font/modern_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="238dp"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/button"
+        android:background="@drawable/details_tab"
+        android:text=" CLICK \n  FOR WEBSITE"
+        android:fontFamily="@font/modern_sans_light"
+        android:textColor="@color/yellowAccent"
+        android:textSize="20sp"
+        android:gravity="left|center"
+        android:padding="35dp"
+        android:onClick="site"
+        android:layout_width="160dp"
+        android:layout_height="162dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="504dp" />
+
+
+
+</RelativeLayout>
+
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/website"-->
+    <!--        android:layout_width="160dp"-->
+    <!--        android:layout_height="170dp"-->
+    <!--        android:layout_marginLeft="190dp"-->
+    <!--        android:src="@drawable/details_tab"-->
+    <!--        android:layout_marginTop="500dp" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/car_website_text"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="WEBSITE"-->
+    <!--        android:fontFamily="@font/modern_sans_light"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:layout_marginTop="530dp"-->
+    <!--        android:layout_marginLeft="228dp"-->
+    <!--        android:textColor="@color/yellowAccent"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/car_website_details_text"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="get more details"-->
+    <!--        android:fontFamily="@font/modern_sans_light"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:layout_marginTop="580dp"-->
+    <!--        android:layout_marginLeft="200dp"-->
+    <!--        android:textColor="@color/colorAccent"/>-->
+
+    <!--    <Button android:id="@+id/button"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        android:onClick="site"-->
+    <!--        android:layout_width="148dp"-->
+    <!--        android:layout_height="160dp"-->
+    <!--        android:layout_marginLeft="190dp"-->
+    <!--        android:layout_marginTop="505dp" />-->

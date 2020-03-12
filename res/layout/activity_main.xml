@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        app:titleTextColor="@color/colorAccent"-->
+<!--        android:background="@color/colorPrimaryDark"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tab"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/tab" />
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/car"
+            android:layout_width="110dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="5dp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/search_btn"-->
+<!--            android:src="@drawable/search"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginStart="330dp"-->
+<!--            android:layout_marginTop="17dp"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="320dp"
+            android:background="@drawable/search"/>
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edit_search"-->
+<!--            android:hint="Search for a particular car"-->
+<!--            android:fontFamily="@font/modern_sans_light"-->
+<!--            android:textColor="@color/blueAccent"-->
+<!--            android:layout_width="320dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/search_button"-->
+<!--            android:layout_width="28dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginStart="320dp"-->
+<!--            android:background="@drawable/search"/>-->
+
+<!--    </RelativeLayout>-->
+<!--    <EditText-->
+<!--        android:id="@+id/edit_search"-->
+<!--        android:hint="Search for a particular car"-->
+<!--        android:fontFamily="@font/modern_sans_light"-->
+<!--        android:textColor="@color/blueAccent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

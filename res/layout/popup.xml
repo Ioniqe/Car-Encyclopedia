@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/modern_sans_light"
+        android:textStyle="bold"
+        android:hint="Search"
+        android:textColor="@color/yellowAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/butt_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  search for car details  "
+                android:textColor="@color/yellowAccent" />
+
+            <Button
+                android:id="@+id/butt_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  search for a certain year  "
+                android:textColor="@color/yellowAccent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

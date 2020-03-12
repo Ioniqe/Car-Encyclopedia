@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/car_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/modern_sans_light"
+        android:text="YEAR"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:src="@drawable/mercedes"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="65dp" />
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/modern_sans_light"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="NAME"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <RelativeLayout
+                android:id="@+id/car_class_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_class"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="CLASS"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_class_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_manufacturer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_manufacturer"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="MANUFACTURER"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_manufacturer_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_price_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_price"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="PRICE"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_price_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+
+            <RelativeLayout
+                android:id="@+id/car_style_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_style"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="STYLE"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_style_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_engine_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_engine"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="ENGINE"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_engine_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_max_speed_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_max_speed"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="MAX SPEED"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_max_speed_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_horsepower_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_horsepower"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="HORSEPOWER"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_horsepower_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_transmission_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_transmission"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="TRANSMISSION"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_transmission_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="155sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_color_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_color"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="COLOR"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_color_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="155sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_interior_color_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_interior_color"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="INTERIOR COLOR"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_interior_color_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="175sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_door_number_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_door_number"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="NUMBER OF DOORS"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_door_number_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="210sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_seat_number_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_seat_number"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="NUMBER OF SEATS"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_seat_number_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_drive_type_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_drive_type"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="DRIVE TYPE"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_drive_type_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_fuel_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_fuel"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="FUEL"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_fuel_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_fuel_tank_capacity_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_fuel_tank_capacity"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="FUEL TANK CAPACITY"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_fuel_tank_capacity_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_consumption_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_consumption"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="CONSUMPTION"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_consumption_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_acceleration_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_acceleration"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="ACCELERATION"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_acceleration_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_cylinder_number_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_cylinder_number"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="CYLINDERS AlIGNMENT
+"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_cylinder_number_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/car_weight_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/car_weight"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:text="WEIGHT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_weight_detail"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/modern_sans_light"
+                    android:gravity="right"
+                    android:text="TEXT"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="640dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/modern_sans_light"
+            android:onClick="descriptionButton"
+            android:text="DESCRIPTION"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="640dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/modern_sans_light"
+            android:onClick="site"
+            android:text="VIDEO"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#191A21</color>
+    <color name="colorPrimary">#21252D</color>
+    <color name="colorAccent">#85AAB0</color>
+    <color name="paleBlue">#80D6C8</color>
+    <color name="blueAccent">#00EADF</color>
+    <color name="yellowAccent">#F4DE5B</color>
+    <color name="orangeAccent">#FA9C43</color>
+    <color name="pinkAccent">#E03374</color>
+    <color name="purpleAccent">#8268E1</color>
+</resources>
